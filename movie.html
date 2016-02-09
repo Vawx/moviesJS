@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/themoviedb.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Movies</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="text-align:center;font-size:128px;"><b>Now Playing</b></h1>
+    </div>
+
+    <div class="row" style="padding:24px;" id="image-container">
+      <div class="" id="image-nail">
+        <label for="" id="title" style="font-size:24px;"></label>
+        <img class="img-thumbnail" src="" alt="" id="image" />
+      </div>
+    </div>
+
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h1 class="modal-title" id="movie-title"></h1>
+          </div>
+          <div class="modal-body">
+            <p id="outline"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+  </body>
+</html>

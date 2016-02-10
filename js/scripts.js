@@ -37,6 +37,21 @@ $(document).ready(function( ) {
     }
   }
 
+  $("#cost-form").on('click', function( ) {
+    var age = $("#age");
+    var time = $("#time").val( ).split(":");
+    var cost = 0;
+    for( var i = 0; i < time.length; i++ )
+    {
+      cost += parseInt( time[ i ] );
+    }
+
+    cost += parseInt( ( age.val( ) / 3 ).toFixed(2) );
+
+    $("#cost").text("$" + cost);
+
+  });
+
   function currentPlayingFailed( )
   {
     console.log( "Couldn't find current playing!" );
